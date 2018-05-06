@@ -1,0 +1,13 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#particles-js {
+    background: firebrick;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin-top: -7px;
+    margin-left: -7px;
+}
