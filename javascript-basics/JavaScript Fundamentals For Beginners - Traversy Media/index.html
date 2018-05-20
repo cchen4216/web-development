@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learning Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body id="body" onload='showDate()'>
+    <div class="header">
+        <h1 id='heading'>Learning Javascript</h1>
+        <p>With Brad Traversy</p>
+    </div>
+
+    <div class="container">
+        
+        <button onclick="doClick()">click me</button>
+        <button onclick="this.innerHTML='you clicked!'">click me 2</button>
+        <button onclick="changeText(this)">click me 3</button>
+        <button onclick="changeText()">click me 4</button>
+        <button onclick="showDate()">show date</button>
+        <button onmouseout="clearDate()" onmouseover="showDate()">show date</button>
+        <h1 id="time"></h1>
+
+
+
+
+        <form method='post' action="" name='myForm'>
+            <div>
+                <label>First Name</label>
+                <input type="text" name='firstName' id='firstName' />
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name='lastName' id='lastName' />
+            </div>
+            <br>
+            <div>
+                <label> Background</label>
+                <select name="background" id="background" onchange="changeBackground(this)">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value='Submit' />
+        </form>
+
+
+
+
+
+
+    </div>
+</body>
+</html>
